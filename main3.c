@@ -28,15 +28,6 @@ void AddElem(num **st, num **pt)
         *pt = dd;
     }
 }
-
-// void AddAfter(num **pt, num **ad_element)
-// {
-    // num *dd = (num *)malloc(sizeof(num));
-    // dd = *ad_element;
-//     (*ad_element)->next = (*pt)->next->next;
-//     (*pt)->next = *ad_element;
-// }
-
 int main()
 {
     num *st, *pt;
@@ -67,11 +58,10 @@ int main()
     for (int i = 0; i < n+1; i++);                                                              
     {
         if (pt->number == max)
-        {                       
-            // AddAfter(&pt, &min_)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
             min_->next = pt->next->next;
             pt->next = min_;
-            // break;
+
         }
         pt = pt->next;
     }
